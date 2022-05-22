@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "classmap": ["Infra/", "Domain/", "Domain/Entity/", "Domain/Provider/"]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

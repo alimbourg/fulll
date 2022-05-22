@@ -1,0 +1,89 @@
+/* Add CSS styles here! */
+:root {
+  --main-color: #61025c;
+  --active-color: #901f8a;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+label {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  max-width: 10rem;
+}
+
+input {
+  margin: .4rem;
+}
+
+img {
+  width: 3em;
+  height: 3em;
+}
+
+input.github {
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  width: calc(300px + 1rem);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.no-suggestions {
+  color: var(--main-color);
+  padding: 0.5rem;
+}
+
+.suggestions {
+  border: 1px solid var(--active-color);
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(300px + 1rem);
+}
+
+.suggestions li {
+  padding: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+
+.suggestions li.active,
+.suggestions li:hover {
+  background-color: #ece; /*var(--active-color);*/
+  /*color: #e2ee03;
+  border-color: var(--active-color);*/
+  border: 3px var(--active-color);
+
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid var(--main-color);
+}
