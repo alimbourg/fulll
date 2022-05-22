@@ -1,7 +1,10 @@
 import React, { Component, Fragment, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
-// An all in one sample application for the 5 checkboxes and github autocompletion
+// An all in one sample application for the 5 checkboxes
+// and github autocompletion
+// some github data sample at the end of this file
+// cf useGithubSample
 class Checkboxes extends Component {
     constructor(props) {
         super(props);
@@ -66,6 +69,7 @@ class Autocomplete extends Component {
     onChange = e => {
         const userInput = e.currentTarget.value;
         let promise = null;
+        // force use of the github Samples below instead of hammering github server
         const useGithubSample = false;
         // damn Promises, so many conventions
         if (useGithubSample) {
