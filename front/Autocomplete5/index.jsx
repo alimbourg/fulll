@@ -1,11 +1,7 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// ReactDOM.render(<div>"HELLO REACT"</div>, document.getElementById('root'));
-
 import React, { Component, Fragment, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
-
+// An all in one sample application for the 5 checkboxes and github autocompletion
 class Checkboxes extends Component {
     constructor(props) {
         super(props);
