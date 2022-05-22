@@ -1,5 +1,5 @@
 # Algo
-PHP but could have been JS, Typescript, Java or others (cf CV)
+PHP but could have been JS, Typescript, Java (and many others)
 
 # Back
 
@@ -16,6 +16,7 @@ Backend Testing
 in Tests/ directory
 some vital ones, but mainly the projet Validating ones
     phpunit Tests
+    
 # Front
 Tiny Lean React project, demonstrating both Front exercises (Autocomplete and the 5 checkboxes)
     cd front/Autocomplete5
