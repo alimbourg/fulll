@@ -1,5 +1,5 @@
 # Algo
-PHP but could have been JS, Typescript, Java (and many others)
+Using PHP, but could have been JS, Typescript, Java (and many others)
 
 # Back
 
@@ -7,18 +7,19 @@ PHP but could have been JS, Typescript, Java (and many others)
     php App/Test.php
 
 ## PHPUnit (No Cucumber)
-### composer install
-to get phpunit
+Backend Testing
+some vital ones, but mainly the projet Validating ones
+in Tests/ directory
+To get phpunit
 and 'autoloading' php sources
 
-### vendor/bin/phpunit Tests
-Backend Testing
-in Tests/ directory
-some vital ones, but mainly the projet Validating ones
-    phpunit Tests
+    cd back/Fleet
+    composer install
+    vendor/bin/phpunit Tests
     
 # Front
 Tiny Lean React project, demonstrating both Front exercises (Autocomplete and the 5 checkboxes)
+
     cd front/Autocomplete5
     npm install
     npm start
